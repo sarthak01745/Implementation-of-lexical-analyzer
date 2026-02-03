@@ -1,0 +1,11 @@
+name: Run Lexical Analyzer
+
+on: [push]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run program
+      run: python lexical_analyzer.py
